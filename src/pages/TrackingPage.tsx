@@ -1,46 +1,19 @@
 import './TrackingPage.css'
+import {Header} from "../components/Header.tsx";
+import {Link} from "react-router";
 
 export function TrackingPage(){
   return (
     <>
       <title>Tracking</title>
-      <div className="header">
-        <div className="left-section">
-          <a href="/" className="header-link">
-            <img className="logo"
-                 src="../public/images/logo-white.png"/>
-            <img className="mobile-logo"
-                 src="../public/images/mobile-logo-white.png"/>
-          </a>
-        </div>
-
-        <div className="middle-section">
-          <input className="search-bar" type="text" placeholder="Search"/>
-
-          <button className="search-button">
-            <img className="search-icon" src="../public/images/icons/search-icon.png"/>
-          </button>
-        </div>
-
-        <div className="right-section">
-          <a className="orders-link header-link" href="/orders">
-
-            <span className="orders-text">Orders</span>
-          </a>
-
-          <a className="cart-link header-link" href="/checkout">
-            <img className="cart-icon" src="../public/images/icons/cart-icon.png"/>
-            <div className="cart-quantity">3</div>
-            <div className="cart-text">Cart</div>
-          </a>
-        </div>
-      </div>
+      <link rel="icon" type="image/png" href="tracking-favicon.png" />
+      <Header />
 
       <div className="tracking-page">
         <div className="order-tracking">
-          <a className="back-to-orders-link link-primary" href="/orders">
+          <Link className="back-to-orders-link link-primary" to="/orders">
             View all orders
-          </a>
+          </Link>
 
           <div className="delivery-date">
             Arriving on Monday, June 13
@@ -54,7 +27,7 @@ export function TrackingPage(){
             Quantity: 1
           </div>
 
-          <img className="product-image" src="../public/images/products/athletic-cotton-socks-6-pairs.jpg"/>
+          <img className="product-image" src="images/products/athletic-cotton-socks-6-pairs.jpg"/>
 
           <div className="progress-labels-container">
             <div className="progress-label">

@@ -1,30 +1,13 @@
-import './checkout-header.css'
+
 import './CheckoutPage.css'
+import {CheckoutHeader} from "./CheckoutHeader.tsx";
 
 export function CheckoutPage() {
   return (
     <>
       <title>Checkout</title>
-      <div className="checkout-header">
-        <div className="header-content">
-          <div className="checkout-header-left-section">
-            <a href="/">
-              <img className="logo" src="../public/images/logo.png"/>
-              <img className="mobile-logo" src="../public/images/mobile-logo.png"/>
-            </a>
-          </div>
-
-          <div className="checkout-header-middle-section">
-            Checkout (<a className="return-to-home-link"
-                         href="/">3 items</a>)
-          </div>
-
-          <div className="checkout-header-right-section">
-            <img src="../public/images/icons/checkout-lock-icon.png"/>
-          </div>
-        </div>
-      </div>
-
+      <link rel="icon" type="image/png" href="cart-favicon.png" />
+      <CheckoutHeader />
       <div className="checkout-page">
         <div className="page-title">Review your order</div>
 
@@ -37,7 +20,7 @@ export function CheckoutPage() {
 
               <div className="cart-item-details-grid">
                 <img className="product-image"
-                     src="../public/images/products/athletic-cotton-socks-6-pairs.jpg"/>
+                     src="images/products/athletic-cotton-socks-6-pairs.jpg"/>
 
                 <div className="cart-item-details">
                   <div className="product-name">
@@ -113,7 +96,7 @@ export function CheckoutPage() {
 
               <div className="cart-item-details-grid">
                 <img className="product-image"
-                     src="../public/images/products/intermediate-composite-basketball.jpg"/>
+                     src="images/products/intermediate-composite-basketball.jpg"/>
 
                 <div className="cart-item-details">
                   <div className="product-name">
