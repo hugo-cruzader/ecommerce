@@ -1,0 +1,27 @@
+.not-found {
+    max-width: 850px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /* margin-left: auto;
+       margin-right auto;
+       Is a trick for centering an element horizontally
+       without needing a container. */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.not-found h1 {
+    font-size: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.not-found h2 {
+    font-size: 100px;
+    margin-top: 20px;
+    text-align: center;
+}
