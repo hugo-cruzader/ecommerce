@@ -1,14 +1,15 @@
 import {Routes, Route} from 'react-router'
 import { HomePage } from './pages/HomePage'
 import './App.css'
+import {CheckoutPage} from "./pages/CheckoutPage.tsx";
 
 function App() {
 
 
   return (
     <Routes>
-      <Route index element={<HomePage/>}/>
-      <Route path="checkout" element={<div>Test checkout page</div>}/>
+      <Route index element={<HomePage />}/>
+      <Route path="checkout" element={<CheckoutPage />}/>
     </Routes>
   )
 }
